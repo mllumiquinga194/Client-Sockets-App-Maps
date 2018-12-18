@@ -2,7 +2,10 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "types": []
+    // para indicarle a angular que la libreria esta instaalda
+    "types": [
+      "googlemaps"
+    ]
   },
   "exclude": [
     "test.ts",
