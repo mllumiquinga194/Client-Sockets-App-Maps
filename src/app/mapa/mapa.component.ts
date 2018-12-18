@@ -107,7 +107,7 @@ export class MapaComponent implements OnInit {
         lat: coors.latLng.lat(),
         lng: coors.latLng.lng(),
         id: new Date().toISOString() //Para generar un id identificador del marcador
-      };
+      };      
 
       this.agregarMarcador(nuevoMarcador);
 
@@ -141,7 +141,7 @@ export class MapaComponent implements OnInit {
     this.marcadores.push(marker);
 
     //Mostrar pantalla de informacion
-    const contenido = `<b>${marcador.nombre}</b>`;
+    const contenido = `<b>Title: ${marcador.nombre}</b><br><b>Lat: ${marcador.lat}</b><br><b>Lng: ${marcador.lng}</b>`;
     const infoWindow = new google.maps.InfoWindow({
       content: contenido
     });
